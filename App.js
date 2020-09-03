@@ -3,8 +3,8 @@ import React, {useState}  from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 export default function App() {
-  const [clear1, inp1] = useState(null);
-  const [clear2, inp2] = useState(null);
+  const [clear1, inp1] = useState("");
+  const [clear2, inp2] = useState("");
   return (
     <View style={styles.container}>
       <TextInput style = {styles.textinp} placeholder = "Enter Username" onChangeText = {txt => inp1(txt)}>{clear1}</TextInput>

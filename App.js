@@ -8,7 +8,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <TextInput style = {styles.textinp} placeholder = "Enter Username" onChangeText = {txt => inp1(txt)}>{clear1}</TextInput>
-  <TextInput style = {styles.textinp} placeholder = "Enter Password" onChangeText = {txt => inp2(txt)}>{clear2}</TextInput>
+  <TextInput style = {styles.textinp} secureTextEntry = {true} placeholder = "Enter Password" onChangeText = {txt => inp2(txt)}>{clear2}</TextInput>
       <Button title = "Login"
         onPress = {() =>{
         // counter++;
